@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* Seção de login */
+.container-principal {
+    width: 55%;
+    text-align: -webkit-center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 100px;
+    color: #02021c;
+}
+
+h3 {
+    font-weight: 500;
+    color: #000000;
+    margin: 20px 0;
+}
+
+/* Redes sociais */
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.5px solid #000000;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    cursor: pointer;
+}
+
+.redes-sociais:first-child {
+    margin-left: 0;
+}
+
+.redes-sociais:hover {
+    background-color: #d2d2e0;
+    border: none;
+}
+
+.img-links {
+    width: 30px;
+    height: 30px;
+}
+
+/* Fim das redes sociais */
+
+.paragraph-line {
+    width: 60%;
+}
+
+/* Formulário */
+.paragraph-line p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 15px 0;
+    display: flex;
+}
+
+.paragraph-line p:before,
+.paragraph-line p:after {
+    color: #000000;
+    content: '';
+    flex: 1;
+    border-bottom: groove 2px;
+    margin: auto 0.25rem;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #F4F8F7;
+    padding: 15px;
+}
+
+.input img {
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    background: transparent;
+    width: 90%;
+    outline: none;
+    margin-left: 10px;
+}
+
+.sign {
+    width: 30%;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    background: #02021c;
+}
+
+.sign:hover {
+    background-color: #43e61a;
+    color: #ffffff;
+
+}
+
+.sign:active {
+    opacity: .6;
+}
+
+/* Fim do formulário */
+/* Fim da seção de login */
+
+/* Seção de increver-se */
+
+
+.sign-up {
+    width: 45%;
+    background-color: #02021c;
+    color: #ffffff;
+    text-align: -webkit-center;
+    display: flex;
+    align-items: center;
+}
+
+.signup-text {
+    width: 100%;
+}
+
+.signup-text h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.signup-text p {
+    font-size: 25px;
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+.signup-text button {
+    background-color: white;
+    color: black;
+}
+
+/* Fim da seção de increver-se */
+
+/* Defina as propriedades de animação */
+.animate {
+    animation-duration: 1s;
+    animation-name: fadeIn;
+}
+
+/* Defina a animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.page-1 {
+    transition: transform 1s ease-in-out;
+}
+
+.page-2 {
+    transition: transform 1s ease-in-out;
+}
+
+
+
+
+/* Animação para ir para a esquerda */
+
+
+/* Animação para ir para a esquerda */
+.transition-left {
+    animation: slide-left 1s ease-in-out forwards;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    .container-principal {
+        width: 100%;
+        height: 60%;
+    }
+
+    .sign-up {
+        width: 100%;
+        height: 40%;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:700px) {
+
+    .container-principal,
+    .sign-up {
+        padding: 20px;
+    }
+
+    .signup-text p {
+        font-size: 20px;
+    }
+
+    .sign {
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h1 {
+        font-size: 34px;
+        margin-top: 8%;
+    }
+
+    .input {
+        width: 85%;
+    }
+
+    #btn-signUp {
+        margin-bottom: 8%;
+    }
+
+}

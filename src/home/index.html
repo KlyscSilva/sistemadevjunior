@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../home/styles.css">
+    <link rel="shortcut icon" href="../assets/icons8-web-analystics-48.png">
+    <link rel="stylesheet" href="../blobz.min.css">;
+    <script src="../script.js" defer></script>
+    <title>Next Access</title>
+</head>
+
+<body>
+
+    <!-- Seção de login -->
+    <section class="container-principal">
+        <h1>Faça login na sua conta</h1>
+        <h3>Entrar usando redes sociais</h3>
+
+        
+
+        <!-- Redes sociais -->
+        <div class="links">
+            <button class="redes-sociais">
+                <img class="img-links" src="../assets/icons8-f-do-facebook-24.png" alt="facebook" class="links">
+            </button>
+            <button class="redes-sociais">
+                <img class="img-links" src="../assets/icons8-google-plus-32.png" alt="google plus" class="links">
+            </button>
+            <button class="redes-sociais">
+                <img class="img-links" src="../assets/icons8-linkedin-2-32.png" alt="linkedin" class="links">
+            </button>
+        </div>
+        <!-- Fim das redes sociais -->
+
+        <div class="paragraph-line"><p>OR</p></div>
+
+        <!-- Formulário -->
+        
+        <form action="/login" method="post" class="form-login">
+            <label for="" class="input">
+                <img src="../assets/icons8-mensagem-preenchida-24.png" alt="">
+                <input required type="email" placeholder="Email" name="email">
+            </label>
+
+            <br>
+
+            <label for="" class="input">
+                <img src="../assets/closed.png" alt="cadeado">
+                <input required type="password" placeholder="Password" name="password" id="password">
+                <img src="../assets/open.png" alt="olhovisível" id="eyeSvg" onclick="eyeClick()">
+            </label>
+
+            <br>
+
+            
+            <button type="submit" id="btn-signUp" class="sign">Entrar</button>
+
+        </form>
+        <!-- Fim do formulário -->
+
+    </section>
+    <!-- Fim da seção de login -->
+
+    <!-- Seção de increver-se -->
+    
+    <section class="sign-up">
+        
+        <div class="signup-text">
+            <h2>Novo Aqui?</h2>
+            <p>Cadastre-se agora para descobrir<br> um mundo de novas oportunidades empolgantes <br></p>
+            <button  class="sign" onclick="registerPage()">Cadastre-se</button>
+        </div>
+    </section>
+        <!-- Fim da seção de increver-se -->
+    
+</body>
+
+</html>

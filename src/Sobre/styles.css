@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+  }
+  
+  
+body {
+    background-color: #030328;
+}
+
+button{
+    background-color: #ffffff; 
+    color: #030328;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    float: right;
+   margin-right: 20px;
+   font-weight: 500;
+}
+  
+button:hover {
+    opacity: 0.9;
+    background-color: #42e619;
+    color: #ffffff;
+}
+
+
+h1{
+    text-align: center;
+    margin: 30px auto;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0px auto;
+    width: 120px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto 0px auto;
+    width: 120px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+.container-1 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #030328;
+    cursor: pointer;
+}
+
+.container-2 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #030328;
+    cursor: pointer;
+}
+
+.container-diany{
+    margin: 15px 35px;
+}
+
+.container-jp{
+    margin: 15px 35px;
+}
+
+.container-matheus{
+    margin: 15px 35px;
+}
+
+.container-mikaeli{
+    margin: 15px 35px;
+}
+
+.face {
+    width: 220px;
+    height: 220px;
+    perspective: 700px;
+}
+  
+.front, .back {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    transition: 800ms;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+  
+.front {
+    
+    z-index: 1;
+}
+  
+.back {
+    background: linear-gradient(#443f3f, #272424);;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+  
+.face:hover .front {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+  
+.face:hover .back {
+    transform: rotateY(0);
+    z-index: 1;
+}
+
+.img-profile{
+    width: 220px;
+    height: 220px;
+    border-radius: 14px;
+
+}
+
+
+
+@media (max-width: 1000px){
+
+h2{
+    font-size: 26px;
+    text-align: center;
+    margin-top: 8px;
+}
+    
+p{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 8px;
+}
+    
+.linkedin {
+    margin: 25px auto 0px auto;
+    width: 200px;
+}
+    
+.github{
+    margin: 20px auto 0px auto;
+    width: 200px;
+        
+        
+}
+
+
+.container-1 {
+    width: 100%;
+    margin-top: 200px;
+}
+    
+.container-2 {
+    width: 100%;
+    
+}
+
+.face {
+    width: 350px;
+    height: 350px;
+}
+      
+.front, .back {
+    width: 350px;
+    height: 350px;
+}
+
+.img-profile{
+    width: 350px;
+    height: 350px;
+
+}
+
+
+
+
+}
+    
+@media screen and (max-width: 769px){
+
+
+    button {
+    
+        margin: 30px auto;
+        float: none;
+    }
+
+
+
+h1 {
+    display: block;
+}
+  
+.container-1 {
+    display: block;
+    margin-top: 80px;
+}
+    
+.container-2 {
+    display: block;
+}
+    
+.container-diany{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 50px auto;
+}
+    
+    .container-jp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    
+    .container-matheus{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    
+    .container-mikaeli{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto;
+    }    
+
+    
+}
+
+    
+    
+@media screen and (max-width: 551px){
+    
+    
+h2{
+        font-size: 20px;
+        margin-top: 5px;
+}
+    
+p{
+        font-size: 16px;
+        margin-top: 5px;
+}
+    
+.linkedin {
+        margin: 20px auto 0px auto;
+        width: 140px;
+        border-radius: 8px;
+}
+    
+.github{
+        margin: 15px auto 0px auto;
+        width: 140px;
+        border-radius: 8px;
+}
+
+.face {
+        width: 250px;
+        height: 250px;
+}
+          
+.front, .back {
+        width: 250px;
+        height: 250px;
+}
+    
+.img-profile{
+        width: 250px;
+        height: 250px;
+}
+
+    
+}

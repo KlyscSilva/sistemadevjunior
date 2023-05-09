@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="../Create-account/style.css">
+    <link rel="shortcut icon" href="../assets/icons8-web-analystics-48.png" type="image/x-icon">
+    <title>Next Acess - New Account</title>
+</head>
+
+<body>
+    <section class="left-page">
+        <div class="left">
+            <h1>Next Access</h1>
+            <p>Conecte-se e conheça os juninhos</p>
+            
+            <a href="../home/index.html" onclick="IrNextPage()">
+                <button class="button-left">Login</button>
+            </a>
+            
+        </div>
+    </section>
+
+    <section class="right-page">
+        <h2>Criar Conta</h2>
+
+        <div id="alerta"></div>
+
+        <form class="form-right" method="post" action="/cadastro" id="meuFormulario" onsubmit="cadastrarUsuario(event)">
+
+            <div class="links">
+                <button class="redes-sociais">
+                    <img class="img-links" src="../assets/icons8-f-do-facebook-24.png" alt="facebook" class="links">
+                </button>
+                <button class="redes-sociais">
+                    <img class="img-links" src="../assets/icons8-google-plus-32.png" alt="google plus" class="links">
+                </button>
+                <button class="redes-sociais">
+                    <img class="img-links" src="../assets/icons8-linkedin-2-32.png" alt="linkedin" class="links">
+                </button>
+            </div>
+
+            <div id="mensagem"></div>
+
+            <div class="forms">
+                <label for="" class="input">
+                    <input class="input-form" type="text" placeholder="Name" autofocus required name="name">
+                </label>
+
+                <label for="" class="input">
+                    <input class="input-form" type="email" placeholder="E-mail" required name="email">
+                </label>
+
+                <label for="" class="input">
+                    <input class="input-form" type="password" placeholder="Password" required name="password">
+                </label>
+                
+                
+                <button class="button-register" type="submit" value="cadastrar">Cadastrar</button>
+            </div>
+        </form>
+
+        
+
+    </section>
+
+</body>
+
+</html>
