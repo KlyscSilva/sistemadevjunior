@@ -1,13 +1,11 @@
 const express = require('express');
 const mysql = require('mysql');
 const app = express();
-const path = require('path');
-const http = require('http');
 const bodyParser = require('body-parser');
 
 
 app.use(express.urlencoded({ extended: true}));
-app.use(express.static(path.join(__dirname, 'public')));
+
 
 // criando middleware para carregar o css
 app.use(express.static("src"));
@@ -35,9 +33,9 @@ connection.connect((error) => {
 });
 
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src', 'home', 'index.html'));
-});
+app.get('/', (req,res) =>{
+    res.sendFile(__dirname + "/src/home/index.html"); 
+})
 
 app.post('/cadastro', (req, res) => {
 
