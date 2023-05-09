@@ -1,6 +1,7 @@
 const express = require('express');
 const mysql = require('mysql');
 const app = express();
+const http = require('http');
 const bodyParser = require('body-parser');
 
 
@@ -96,3 +97,5 @@ app.post('/login', (req, res) => {
 app.listen(3000, () => {
   console.log('✅Servidor iniciado na porta 3000!✅');
 });
+
+module.exports = server;
