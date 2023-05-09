@@ -29,7 +29,7 @@ connection.connect((error) => {
   if (error) {
     console.log('Erro ao conectar com o MySQL:', error);
   } else {
-    console.log('Conexão com o MySQL estabelecida com sucesso!');
+    console.log('✅Conexão com o MySQL estabelecida com sucesso!✅');
   }
 });
 
@@ -97,4 +97,5 @@ app.post('/login', (req, res) => {
 app.listen(3000, () => {
   console.log('✅Servidor iniciado na porta 3000!✅');
 });
+
 

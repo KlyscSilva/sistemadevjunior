@@ -213,12 +213,10 @@ p{
 @media screen and (max-width: 769px){
 
 
-    button {
-    
-        margin: 30px auto;
-        float: none;
-    }
+.butmobile{
 
+    display: none;
+}
 
 
 h1 {
