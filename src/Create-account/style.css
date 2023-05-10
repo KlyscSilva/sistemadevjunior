@@ -162,6 +162,8 @@ input {
 
 .button-register:hover {
     opacity: .8;
+    background-color: #42e619;
+    color: #ffffff;
 }
 
 /* Fim do button de cadastrar */
