@@ -253,6 +253,16 @@ input {
     .button-register {
         margin-bottom: 40px;
     }
+
+    #alerta {
+
+        background-color: #29a744;
+        border-radius: 50px;
+        margin: 10px;
+        color: #ffffff;
+    }
+
+
 }
 
 #alerta {
